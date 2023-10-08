@@ -49,7 +49,7 @@ console.dir(window);
 const el = document.getElementsByTagName("button");
 console.log(el); // HTMLCollection(2) [button.btn, button.btn]
 
-// change the color of the btn
+// change the color of the btn  
 // el.style.color = "red"; // ERROR: Cannot set properties of undefined (setting 'color')
 el[0].style.color = "red"; // correct way
 

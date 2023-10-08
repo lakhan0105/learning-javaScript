@@ -1,0 +1,83 @@
+JS BASICS 
+- How to add JS -> Inline, Internal, External 
+- Helper Methods 
+- Advantages of console.log() over others 
+- Expressions, Statements and Comments 
+- Variables, Rules for naming them 
+- Why do we need Variables?
+- const, let and var keywords 
+- Which one to use?
+- Quotation marks 
+- String concatenation 
+- What is the meaning of JS is a loosely typed language? 
+- Numbers in JS 
+- Explain modulus operator 
+- Implicit conversion? Where do we use it?
+- Data types 
+- Arrays 
+- Accessing them. What happens when u try to access array which is not present?
+- Changing the array items 
+- Functions 
+- Fucntion parameters 
+- Function Arguements 
+- What happens when u have defined a param and u do not pass any arg?
+- Function return
+- What happens if the function does not return anything?
+- Function Expression 
+- What is the main difference of function expression with normal function definition?   
+- Objects 
+- Accessing the methods in a object?
+
+JS BASICS CONTINUED 
+- String Properties and methods 
+- length property 
+- toUpperCase(), toLowerCase(), slice(), trim(), charAt(), indexOf(), includes()
+- Template Literals 
+- Array properties and methods 
+- length, last char using length 
+- concat(), unshift(), shift(), push(), pop(), slice(), splice(), reverse()
+- splice() - changes the original array, slice() - does not change the original array 
+- Values(prims) vs Reference types 
+- null and undefined 
+- Truthy and falsy values 
+- Unary operators, Binary operators, Ternary operators 
+- Global scope 
+- Local scope
+- how does JS look for the variable?
+- Functions are first-class-objects. Why?
+- Higher order functions?
+- Callback functions?
+- Array Iterators 
+- forEach(), map(), filter(), find(), reduce()
+- forEach() - does not return aything 
+- map() - returns a new array
+- filter() - returns a new array
+- find() - returns a object 
+- reduce() - [DOUBT]
+- which method is best for getting unique values?
+- which method is best for taking the summ of all the numbers?
+- Math object 
+- Math.floor() and Math.ceil()
+- Math.min() and MAth.max()
+- Math.random()
+- Math.floor(Math.random() * 10 + 1) for generating random numbers from 0-10
+- Date object 
+
+DOM 
+DOM GENERAL CONCEPTS 
+- What is DOM?
+- What is a document?
+- What does the element selection return? - node obj/node List 
+- What is a node object?
+- properties - nodeValue, nodeName, nodeType
+- which selection returns node object - 
+- What is a nodeList?
+- properties - does not have all the properties of regualr arrays
+- which selection returns nodeList? - querySelectorAll 
+- Window and document
+- what is console.dir()?
+- getElementById()
+- getElementsBytagName('tag name')
+- getElementsByClassName()
+- querySelector()
+- querySelectorAll()
