@@ -1,12 +1,13 @@
-/*
+// COMMENT THE CODE BEFORE USING THEM
+
 // INTRODUCTION PROBLEMS -------------------------------------------------------------------------------------
 // PRINT HELLO WORLD
 console.log("Hello world"); // we can also use alert() and doc.write()
 
 // ADD TWO NUMBERS (ENTERED BY USER) -------------------------------------------------------------------------
-// const num1 = prompt("Enter num1 value:");
-// const num2 = prompt("Enter num2 value:");
-// console.log(Number(num1) + Number(num2)); // 5,5=10
+const num1 = prompt("Enter num1 value:");
+const num2 = prompt("Enter num2 value:");
+console.log(Number(num1) + Number(num2)); // 5,5=10
 
 // FIND THE SQUARE ROOT --------------------------------------------------------------------------------------
 console.log(Math.sqrt(4)); // 2
@@ -25,7 +26,7 @@ console.log(
 );
 
 // - When all sides are known
-// - Note: pass thesides such that a triangle can be formed, else the pgm won't run 
+// - Note: pass thesides such that a triangle can be formed, else the pgm won't run
 // - we can find using Heron's formula
 // - s = (a+b+c)/2
 // - area = sqrt(s*(s-a)*(s-b)*(s-c))
@@ -37,7 +38,7 @@ const area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
 console.log(`Area of the triangle is: ${area}`); // 6
 
 // SWAP TWO VARIABLES ----------------------------------------------------------------------------------------
-// Using temp variable 
+// Using temp variable
 let num1 = 1;
 let num2 = 2;
 let temp;
@@ -52,7 +53,6 @@ let num1 = 1;
 let num2 = 2;
 [num1, num2] = [num2, num1];
 console.log(num1, num2); // 2 1
-*/
 
 // CONVERT KM TO MILES ---------------------------------------------------------------------------------------
 // formula: 1km is 0.621miles
