@@ -1,0 +1,112 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+li {
+  list-style: none;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* HEADER STYLING */
+.header-section {
+  background-color: red;
+  overflow: hidden;
+}
+
+.nav-center {
+  width: 100%;
+  padding-left: 1em;
+  padding-top: 1em;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.links-list {
+  /* padding-top: 1.5em; */
+  line-height: 2;
+}
+
+.link {
+  font-size: 1.2rem;
+}
+
+.hamburger-icon {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0.8em;
+  right: 0.7em;
+  left: 11;
+  cursor: pointer;
+}
+
+/* HERO SECTION STYLING */
+.section {
+  min-height: 100vh;
+  border: 1px solid;
+  background-color: grey;
+}
+
+#hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-info {
+  margin-bottom: 2rem;
+}
+
+.explore-btn {
+  background-color: transparent;
+  padding: 0.2em 0.5em;
+  border: 1.5px solid;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.explore-btn:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1.5px solid #000;
+}
+
+/* CLASSES ---------------------------------------------------*/
+.hide {
+  display: none;
+  /* height: 0em; */
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: auto;
+}
