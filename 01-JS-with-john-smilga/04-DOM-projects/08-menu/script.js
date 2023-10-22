@@ -160,3 +160,6 @@ btns.forEach((btn) => {
 
 // ISSUES
 // - NEED TO MAKE IT COMPATIBLE FOR BIGGER SCREENS
+
+// POINTS TO REMEMBER
+// - when u are creating an element dynamically, like filter btns here, you need to select them only after declaring them, else it won't get selected
