@@ -272,3 +272,30 @@ console.log(rest); // {age: 44, job: 'dev', plce: 'India'}
 
 // spread - arguement
 // rest - parameters
+
+// ARRAY.OF() -----------------------------------------------------------------------------------------
+// Array.from() and Array.of() methods not on the prototype
+// we get undefined when we use them on arrays
+// Array.of() - creates a new array instance from a variable num of args
+const friends = ["john", 2, 55];
+console.log(friends); // ['john', 2, 55]
+
+// Array.from()
+// - returns array obj from any obj with a length property or an iterable object.
+// - from turns array-like/ish into array - string, nodelist,Set
+
+// string
+const udemy2 = "udemy";
+console.log(Array.from(udemy2)); // ) ['u', 'd', 'e', 'm', 'y']
+
+// convert the args passed into an func into iterable arrays
+function getTotal() {
+  const args = Array.from(arguments);
+  console.log(Array.isArray(args)); // true (turns it into array)
+
+  const total = args.reduce((acc, curr) => (acc += curr), 0);
+  console.log(total); // 30
+}
+getTotal(10, 20);
+
+// to be cont.................
