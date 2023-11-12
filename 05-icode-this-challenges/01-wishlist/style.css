@@ -1,0 +1,177 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* HEADER STYLING STARTS */
+header {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #f5f1f7;
+}
+
+.center {
+  width: 90%;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  min-height: 5rem;
+}
+
+.nav-left {
+  margin-right: auto;
+}
+
+.page-heading {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+/* SEND WISHLIST BTN STYLING */
+.btn {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+}
+
+.send-btn {
+  padding: 0.5em 1.5em;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px #dddcdc;
+}
+/* HEADER STYLING ENDS */
+
+/* CARDS CONTIANER STYLING STARTS */
+
+section {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+/* cards-container styling */
+.card {
+  position: relative;
+  display: flex;
+  /* width: 90%; set in .center*/
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1em;
+  box-shadow: 1px 1px 12px #dad6d6;
+  margin-top: 1em;
+}
+
+/* item-img styling */
+.item-img-container {
+  width: 10rem;
+  height: 10rem;
+  margin-right: 1.5em;
+}
+
+.item-img-container img {
+  object-fit: cover;
+}
+
+/* close icon styling */
+.close-icon {
+  position: absolute;
+  top: 0.7em;
+  right: 1em;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+/* item-info-container styling */
+.item-info-container {
+  width: 100%;
+  display: flex;
+  gap: 0.5em;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.item-name {
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.item-desc {
+  font-size: 0.9rem;
+}
+
+.main-info {
+  text-align: left;
+}
+
+.item-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.25em;
+}
+
+/* cart btn styling */
+.cart-btn {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  border: none;
+  min-width: 9rem;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+  border-radius: 0.5em;
+  background-color: #3d49f5;
+  color: #fff;
+  box-shadow: 1px 1px 10px #dbd9d9;
+}
+
+.cart-btn:hover {
+  background-color: #616bf8;
+  box-shadow: 1px 1px 10px #c5c4c4;
+}
+
+/* CLASSES */
+.hide {
+  display: none;
+}
+
+/* MEDIA QUERIES ------------------------ */
+@media only screen and (min-width: 700px) {
+  .item-info-container {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .main-info {
+    text-align: right;
+  }
+
+  .cart-btn {
+    border-radius: 1.35em;
+  }
+
+  .center {
+    max-width: 50em;
+  }
+}
