@@ -1,0 +1,120 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* WIKI SECTION STYLING STARTS */
+.wiki {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 5em 2em;
+}
+
+/* CONTAINER STYLING STARTS */
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.page-img {
+  width: 12em;
+}
+
+.page-title {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+/* form styling starts */
+form {
+  display: flex;
+  min-width: 35em;
+  background-color: #fff;
+  padding: 2.5em;
+}
+
+.user-input {
+  font-size: 1rem;
+  margin-right: 0em;
+  width: 100%;
+  border: 0.5px solid rgb(172, 170, 170);
+  padding: 0.2em 0.5em;
+  background-color: #f5f5f5;
+  border-top-left-radius: 0.25em;
+  border-bottom-left-radius: 0.25em;
+  border-right: none;
+}
+
+.btn {
+  margin-left: 0em;
+  border: none;
+  padding: 0.2em 2em;
+  text-transform: capitalize;
+  background-color: #645cff;
+  color: #fff;
+  border-left: none;
+  border-top-right-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+  cursor: pointer;
+}
+/* CONTAINER STYLING ENDS */
+/* RESULTS STYLING STARTS */
+.results {
+  width: 70%;
+  /* background-color: blue; */
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1em;
+  row-gap: 2em;
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.result-card {
+  padding: 1em;
+  background-color: #fff;
+}
+
+.result-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+
+.desc {
+  line-height: 1.5;
+  color: #6e8a9f;
+}
+/* RESULTS STYLING ENDS */
+/* WIKI SECTION STYLING ENDS */
+
+/* CLASSES START */
+.hide {
+  display: none;
+}
+/* CLASSES ENDS */
