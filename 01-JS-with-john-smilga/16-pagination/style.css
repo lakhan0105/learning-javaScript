@@ -1,0 +1,92 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.main-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-title {
+  /* width: 50%; */
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* cards section */
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5em;
+}
+
+.card {
+  padding: 2em 3.5em;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 10px #e2e2e2;
+}
+
+.img-container {
+  width: 8em;
+  height: auto;
+}
+
+.person-img {
+  border-radius: 5em;
+}
+
+.person-name {
+  margin-top: 0.8em;
+  margin-bottom: 1em;
+}
+
+.person-link {
+  font-size: 0.8rem;
+  background-color: #49a6e9;
+  color: #fff;
+  vertical-align: middle;
+  padding: 0.4em 0.8em;
+  text-transform: uppercase;
+  border-radius: 1em;
+}
+
+/* page btn styling */
+
+.btns-container {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.page-btn {
+  padding: 0em 0.5em;
+  margin-left: 0.5em;
+  cursor: pointer;
+}
