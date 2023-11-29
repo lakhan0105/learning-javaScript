@@ -1,0 +1,454 @@
+/* IMPORT FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: #fff; */
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+/* GLOBAL CLASSES */
+.title {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  margin-bottom: 1em;
+}
+
+.page-section {
+  display: grid;
+  place-items: center;
+  padding: 5em 0em;
+}
+
+.center {
+  width: 80vw;
+}
+
+/* 
+==============
+NAVBAR STYLING
+==============
+*/
+.navbar {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.nav-center {
+  width: 80vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  /* hide links */
+  display: none;
+}
+
+.nav-link {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  z-index: 100;
+}
+
+.toggle-container {
+  display: flex;
+}
+
+.toggle-cart-btn {
+  cursor: pointer;
+}
+
+/* 
+===================
+HERO STYLING STARTS 
+===================
+*/
+.hero {
+  min-height: 100vh;
+  margin-top: -6rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/main-bcg.jpeg) center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-container {
+  width: 80vw;
+}
+
+.hero-container h1 {
+  font-size: 5rem;
+  text-transform: capitalize;
+}
+
+.hero-container h3 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+
+.hero-btn {
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 0.2em;
+  padding: 0.5em;
+}
+
+/* 
+===============
+SIDEBAR 
+===============
+*/
+.sidebar {
+  /* relative is body */
+  position: absolute;
+  top: 1em;
+  bottom: 1em;
+  left: 1em;
+  right: 1em;
+  background-color: #fff;
+  display: none;
+}
+
+.sidebar-close-btn {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.sidebar-link {
+  color: #000;
+}
+
+/* 
+============
+CART STYLING
+============
+*/
+.cart-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.cart {
+  /* relative is body element */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 23rem;
+  height: 100vh;
+  background-color: #f5f5f5;
+  color: #000;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* hide */
+  display: none;
+  z-index: 100;
+}
+
+.cart-close-btn {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+.cart header h2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.cart-items-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.cart-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.cart-img-container {
+  width: 5em;
+  height: 3.5rem;
+  margin-right: 1em;
+}
+
+.cart-img {
+  object-fit: cover;
+  border-radius: 0.2em;
+}
+
+.cart-item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-right: auto;
+}
+
+.cart-item-name {
+  line-height: 1;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+}
+
+.cart-item-price {
+  font-size: 0.8rem;
+  margin-bottom: 1em;
+}
+
+.cart-item-remove-btn {
+  margin-top: auto;
+  border: none;
+  background-color: transparent;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.modify-items-amt {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.cart footer {
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+}
+
+/* ABOUT PAGE STYLING */
+
+.about-hero {
+  height: 6rem;
+  margin-bottom: 5em;
+  font-size: 1.2rem;
+  background-color: #f5f5f5;
+}
+
+.about-content {
+  padding: 0em 10em;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+.about-desc {
+  line-height: 2;
+}
+
+/* 
+========================
+FEATURED SECTION STYLING 
+========================
+*/
+.featured-center {
+  text-align: center;
+}
+
+.featured-center .container {
+  display: flex;
+}
+
+/* single product */
+.featured-product {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.featured-product-img-container {
+  width: 100%;
+  height: 14em;
+}
+
+.featured-product-img-container img {
+  object-fit: cover;
+}
+
+/* icons */
+.product-icons {
+  /* relative is .featured-product */
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 1em;
+}
+
+/* 
+=====================
+PRODUCTS PAGE STYLING
+=====================
+*/
+
+.products {
+  /* display: flex; */
+  padding: 1em;
+}
+
+.page-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f5f5f5;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+}
+
+/* CLASSES */
+.show {
+  display: block;
+}
+
+/* SINGLE PRODUCT STYLING */
+.single-product-section {
+  display: grid;
+  place-items: center;
+  /* padding: 0em 5em; */
+  text-transform: capitalize;
+}
+
+.single-product-center {
+  width: 90%;
+}
+
+.single-product-img {
+  width: 100%;
+  margin-right: 2em;
+}
+
+.single-product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-color {
+  /* important line */
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 900px) {
+  /* show the nav-links when the screen size increases */
+  .nav-links {
+    display: flex;
+  }
+
+  /* hide hamburger icon */
+  .hamburger {
+    display: none;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  /* PRODUCTS PAGE STYLING */
+  .products {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5em;
+  }
+
+  .filters {
+    margin-right: 2em;
+  }
+
+  .products-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+  }
+
+  /* company filter btns styling */
+  .filter-btns-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-btn {
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    margin-left: 0.5em;
+  }
+
+  /* single product styling */
+  .single-product-center {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: red;
+  }
+
+  .single-product-img {
+    width: 50%;
+  }
+}
+
+/* MEDIA QUERY FOR DESKTOP */
+@media only screen and (min-width: 1200px) {
+  .products-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Comfy</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-center">
+            <!-- links -->
+            <div>
+                <button class="hamburger">hamburger</button>
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="./index.html">home</a></li>
+                    <li><a class="nav-link" href="./products.html">products</a></li>
+                    <li><a class="nav-link" href="./about.html">about</a></li>
+                </ul>
+            </div>
+
+            <!-- logo -->
+            <img class="logo" src="./images/logo-white.svg" alt="logo not found">
+
+            <!-- cart-icon -->
+            <div class="toggle-container">
+                <button class="toggle-cart-btn">toggle cart</button>
+                <span class="cart-item-count">1</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-container">
+            <h1>rest, relax, unwind</h1>
+            <h3>Embrace your choices - we do</h3>
+            <a href="./products.html" class="hero-btn">
+                show now
+            </a>
+        </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="featured page-section">
+        <div class="title">
+            <h3><span>/</span>featured</h3>
+        </div>
+        <div class="featured-center center">
+            <h2 class="loading">loading...</h2>
+            <div class="container">
+                <!-- single product starts -->
+                <!-- <article class="featured-product">
+                    <div class="featured-product-img-container">
+                        <img src="./images/main-bcg.jpeg" alt="not foound">
+                    </div>
+                    <div class="product-icons">
+                        <a href="product.html?id=1" class="product-icon">open</a>
+                        <button class="product-cart-btn product-icon">add to cart</button>
+                    </div>
+                    <footer>
+                        <p class="product-name">product name</p>
+                        <p class="product-price">$999</p>
+                    </footer>
+                </article> -->
+                <!-- single product ends -->
+            </div>
+        </div>
+        <button class="all-products-btn">All Products</button>
+    </section>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <!-- close button -->
+        <button class="sidebar-close-btn">close</button>
+
+        <!-- sidebar links -->
+        <ul class="sidebar-links">
+            <li><a class="sidebar-link" href="./index.html">home</a></li>
+            <li><a class="sidebar-link" href="./products.html">products</a></li>
+            <li><a class="sidebar-link" href="./about.html">about</a></li>
+        </ul>
+    </aside>
+
+    <!-- CART -->
+    <aside class="cart">
+        <button class="cart-close-btn">close cart</button>
+        <header>
+            <h2>Your bag</h2>
+        </header>
+
+        <!-- card items container -->
+        <div class="cart-items-container">
+            <!-- added dynamically -->
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <h2 class="cart-items-total-price">Total</h2>
+            <button class="checkout-btn">Checkout</button>
+        </footer>
+    </aside>
+
+    <!-- script -->
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>

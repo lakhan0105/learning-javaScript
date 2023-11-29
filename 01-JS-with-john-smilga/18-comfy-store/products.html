@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar page-navbar">
+        <div class="nav-center">
+            <!-- links -->
+            <div>
+                <button class="hamburger">hamburger</button>
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="./index.html">home</a></li>
+                    <li><a class="nav-link" href="./products.html">products</a></li>
+                    <li><a class="nav-link" href="./about.html">about</a></li>
+                </ul>
+            </div>
+
+            <!-- logo -->
+            <img class="logo" src="./images/logo-black.svg" alt="logo not found">
+
+            <!-- cart-icon -->
+            <div class="toggle-container">
+                <button class="toggle-cart-btn">toggle cart</button>
+                <span class="cart-item-count">1</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="about-hero page-section">
+        <div class="center">
+            <h3>Home/Products</h3>
+        </div>
+    </section>
+
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <!-- close button -->
+        <button class="sidebar-close-btn">close</button>
+
+        <!-- sidebar links -->
+        <ul class="sidebar-links">
+            <li><a class="sidebar-link" href="./index.html">home</a></li>
+            <li><a class="sidebar-link" href="./products.html">products</a></li>
+            <li><a class="sidebar-link" href="./about.html">about</a></li>
+        </ul>
+    </aside>
+
+    <!-- CART -->
+    <aside class="cart">
+        <button class="cart-close-btn">close cart</button>
+        <header>
+            <h2>Your bag</h2>
+        </header>
+
+        <!-- card items container -->
+        <div class="cart-items-container">
+            <article class="cart-item">
+                <!-- cart image container -->
+                <div class="cart-img-container">
+                    <img class="cart-img" src="./images/main-bcg.jpeg" alt="not found">
+                </div>
+
+                <!-- cart items info -->
+                <div class="cart-item-info">
+                    <p class="cart-item-name">item name</p>
+                    <p class="cart-item-price">item price</p>
+                    <button class="cart-item-remove-btn">
+                        remove
+                    </button>
+                </div>
+
+                <!-- Amount -->
+                <div>
+                    <button class="cart-item-increase-btn modify-items-amt">increase</button>
+                    <p class="cart-item-amount">1</p>
+                    <button class="cart-item-decrease-btn modify-items-amt">increase</button>
+                </div>
+
+
+            </article>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <h2 class="cart-items-total-price">Total</h2>
+            <button class="checkout-btn">Checkout</button>
+        </footer>
+    </aside>
+
+    <!-- PRODUCTS -->
+    <section class="products">
+        <!-- filters -->
+        <div class="filters">
+            <div class="filters-container">
+                <!-- search -->
+                <form class="input-form">
+                    <input type="text" class="search-input">
+                </form>
+
+                <!-- filter btns -->
+                <h2>company</h2>
+                <div class="filter-btns-container">
+                    <!-- added dynamically -->
+                    <!-- <button class="filter-btn">ikea</button> -->
+                </div>
+
+                <!-- price -->
+                <h2>price</h2>
+                <form class="price-form">
+                    <input type="range" class="price-range" min="0" value="50" max="100">
+                </form>
+                <p class="price-value">price value</p>
+            </div>
+        </div>
+
+        <!-- products -->
+        <div class="products-container">
+            <!-- added dynamically -->
+        </div>
+    </section>
+
+    <!-- page loading -->
+    <div class="page-loading">
+        <h2>Loading...</h2>
+    </div>
+
+
+    <!-- script -->
+    <script type="module" src="./pages/products.js"></script>
+</body>
+
+</html>
