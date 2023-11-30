@@ -181,4 +181,62 @@ function daysBeforeChristmas() {
 }
 
 daysBeforeChristmas();
+
+// JS pgm to calculate multiplication and division of two numbers (input from the user).
+const num1 = Number(prompt("Enter num1:"));
+const num2 = Number(prompt("Enter num2:"));
+console.log(`${num1}*${num2}=${num1 * num2}`);
+console.log(`${num1}/${num2}=${num1 % num2}`);
+
 */
+
+// Cel to Far
+// Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit
+// - to cel = ((f-32)/9)*5;
+// - to far = ((c/5)*9)+32
+
+function toCel(inFar) {
+  const tempInCel = ((inFar - 32) / 9) * 5;
+  console.log(`${inFar}F in Celsius is ${tempInCel}C`);
+}
+
+function toFar(inCel) {
+  const temInFar = (inCel / 5) * 9 + 32;
+  console.log(`${inCel}C in Fareinheight is ${temInFar}F`);
+}
+
+toFar(60); // 60°C is 140 °F
+toCel(45); // 45°F is 7.222222222222222°C
+
+// JS pgm to get the website URL (loading page).
+const param = window.location.href;
+console.log(param);
+
+// JS pgm exercise to create a variable using a user-defined name.
+let varName = "firstName";
+let varVal = "Lakhan";
+
+this[varName] = varVal;
+console.log(firstName);
+
+// JS pgm to get the file name extension
+const fileName = "app.js";
+const fileExt = fileName.split(".").pop();
+console.log(fileExt);
+
+// JS pgm to get the diff b/t a given number and 13, if the number is broader than 13 return double the absolute difference.
+// DOUBT
+
+// 16. JS pgm to compute the sum of the two given integers. If the two values are the same, then return triple their sum.
+function sum(num1, num2) {
+  let result;
+  if (num1 === num2) {
+    result = (num1 + num2) * 3;
+  } else {
+    result = num1 + num2;
+  }
+  console.log(`Result:${result}`);
+}
+
+sum(10, 20); // 30
+sum(10, 10); // 60
