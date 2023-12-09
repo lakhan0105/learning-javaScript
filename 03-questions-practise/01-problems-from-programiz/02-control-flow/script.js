@@ -158,7 +158,6 @@ mulTable(5);
 // 1,1 = 2
 // 1,2 = 3
 // 2,3 = 5
-
 function printFibo(number) {
   let n1 = 0;
   let n2 = 1;
