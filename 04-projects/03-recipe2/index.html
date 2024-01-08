@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recipe</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <nav class="nav center">
+            <div class="hamburger-icon icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <p class="logo">allrecipes</p>
+            <div class="search-icon icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- favs section -->
+    <section class="favs-section">
+        <p class="favs-heading">Favorite recipes</p>
+        <div class="favs-container center">
+            <!-- added dynamically -->
+            <!-- <div class="fav">
+                <img class="fav-img" src="./img/icons8-hamburger-100.png" alt="not found">
+                <p class="fav-name">bread</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- recipe of the day section (random recipes) -->
+    <section class="recipe-of-day-section">
+        <div class="cards-container center">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1598373182133-52452f7691ef?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJyZWFkfGVufDB8fDB8fHww"
+                    class="card-img" alt="not found">
+
+                <div class="card-info">
+                    <p class="recipe-name">chicken</p>
+                    <button class="star-btn" data-id="">
+                        <i class="fa-regular fa-star"></i>
+                    </button>
+                </div>
+
+                <div class="card-label">
+                    Popular recipe
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- script -->
+    <script type="module" src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/0e392246cd.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
