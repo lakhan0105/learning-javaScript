@@ -348,5 +348,4 @@ var isPalindrome = function (s) {
 
 let str2 = "A man, a plan, a canal: Panama";
 console.log(isPalindrome(str2));
- 
- 
+
