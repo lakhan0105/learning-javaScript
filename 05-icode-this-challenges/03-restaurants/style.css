@@ -1,0 +1,161 @@
+/* IMPORT FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #6290e6;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.main-container {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 50vh;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+/* HEADER STYLING STARTS */
+header {
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+  height: 4rem;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.nav-center {
+  max-width: 1200px;
+}
+
+.hamburger-btn {
+  margin-left: 0.5em;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.search-btn i {
+  font-size: 1.5rem;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+/* HEADER STYLING ENDS */
+
+/* CARDS CONTAINER STYLING STARTS */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  height: 8rem;
+  padding: 1rem;
+  border-bottom: 1.5px solid #e25757;
+  width: 100%;
+  max-width: 700px;
+}
+
+.card-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.fav {
+  margin-left: auto;
+  transform: translate(-0%, 20%);
+  text-align: center;
+}
+
+.card-img-cont {
+  width: 6.5rem;
+  height: 90%;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-right: 1.5em;
+}
+
+.card-img-cont img {
+  object-fit: cover;
+}
+/* CARDS CONTAINER STYLING ENDS */
+
+/* SIDEBAR STYLING STARTS */
+.sidebar-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  background-color: #b63d3d;
+}
+
+.sidebar-nav {
+  background-color: #b63d3d;
+  padding: 0.5em 1em;
+}
+
+.sidebar-cards-container {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.sidebar-card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+.sidebar-card-info {
+  text-align: center;
+  padding: 0.2em;
+}
+
+.sidebar-close-btn i {
+  font-size: 1.5rem;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1rem;
+}
+
+/* CLASSES */
+.hide {
+  display: none;
+}
+
+.red {
+  background-color: red;
+}
