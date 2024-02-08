@@ -48,3 +48,8 @@ body {
   margin-top: 1em;
   /* padding: 0 1em; */
 }
+
+/* CLASSES */
+.completed {
+  text-decoration: line-through;
+}
